@@ -1,0 +1,819 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.6, pytest-8.0.2, pluggy-1.5.0 -- C:\Users\massm\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: D:\college2-main\backend
+configfile: pytest.ini
+plugins: anyio-4.3.0, asyncio-0.23.5, cov-4.1.0
+asyncio: mode=Mode.AUTO
+collecting ... collected 93 items
+
+tests/test_auth.py::test_register_user ERROR                             [  1%]
+tests/test_auth.py::test_login_invalid_credentials ERROR                 [  2%]
+tests/test_auth.py::test_root_endpoint ERROR                             [  3%]
+tests/test_debug.py::test_debug_path ERROR                               [  4%]
+tests/test_erp_crud.py::TestAuth::test_admin_login PASSED                [  5%]
+tests/test_erp_crud.py::TestAuth::test_hod_login PASSED                  [  6%]
+tests/test_erp_crud.py::TestAuth::test_faculty_login PASSED              [  7%]
+tests/test_erp_crud.py::TestAuth::test_principal_login PASSED            [  8%]
+tests/test_erp_crud.py::TestAuth::test_invalid_login PASSED              [  9%]
+tests/test_erp_crud.py::TestDepartments::test_list_departments PASSED    [ 10%]
+tests/test_erp_crud.py::TestDepartments::test_create_department_as_admin PASSED [ 11%]
+tests/test_erp_crud.py::TestDepartments::test_create_department_as_principal PASSED [ 12%]
+tests/test_erp_crud.py::TestDepartments::test_get_single_department PASSED [ 13%]
+tests/test_erp_crud.py::TestAdminStudentCRUD::test_list_students PASSED  [ 15%]
+tests/test_erp_crud.py::TestAdminStudentCRUD::test_create_student PASSED [ 16%]
+tests/test_erp_crud.py::TestAdminStudentCRUD::test_get_single_student PASSED [ 17%]
+tests/test_erp_crud.py::TestAdminFacultyCRUD::test_list_faculty PASSED   [ 18%]
+tests/test_erp_crud.py::TestAdminFacultyCRUD::test_create_faculty FAILED [ 19%]
+tests/test_erp_crud.py::TestAdminFeeManagement::test_list_fee_structures PASSED [ 20%]
+tests/test_erp_crud.py::TestAdminFeeManagement::test_create_fee_structure PASSED [ 21%]
+tests/test_erp_crud.py::TestAdminGrievances::test_list_grievances PASSED [ 22%]
+tests/test_erp_crud.py::TestAdminDocumentRequests::test_list_document_requests PASSED [ 23%]
+tests/test_erp_crud.py::TestHODDashboard::test_list_department_students PASSED [ 24%]
+tests/test_erp_crud.py::TestHODDashboard::test_list_department_faculty PASSED [ 25%]
+tests/test_erp_crud.py::TestHODDashboard::test_list_subjects PASSED      [ 26%]
+tests/test_erp_crud.py::TestHODDashboard::test_list_subject_mappings PASSED [ 27%]
+tests/test_erp_crud.py::TestHODDashboard::test_approve_document_request PASSED [ 29%]
+tests/test_erp_crud.py::TestHODSubjectCreation::test_create_subject PASSED [ 30%]
+tests/test_erp_crud.py::TestHODSubjectMapping::test_create_subject_faculty_mapping FAILED [ 31%]
+tests/test_erp_crud.py::TestFacultyDashboard::test_get_my_profile PASSED [ 32%]
+tests/test_erp_crud.py::TestFacultyDashboard::test_get_subject_mappings PASSED [ 33%]
+tests/test_erp_crud.py::TestFacultyDashboard::test_list_students PASSED  [ 34%]
+tests/test_erp_crud.py::TestFacultyAttendance::test_mark_attendance PASSED [ 35%]
+tests/test_erp_crud.py::TestFacultyAttendance::test_mark_bulk_attendance PASSED [ 36%]
+tests/test_erp_crud.py::TestFacultyAttendance::test_get_attendance PASSED [ 37%]
+tests/test_erp_crud.py::TestFacultyMarks::test_enter_marks PASSED        [ 38%]
+tests/test_erp_crud.py::TestFacultyMarks::test_enter_bulk_marks PASSED   [ 39%]
+tests/test_erp_crud.py::TestFacultyMarks::test_get_marks PASSED          [ 40%]
+tests/test_erp_crud.py::TestPrincipalDashboard::test_get_analytics_dashboard PASSED [ 41%]
+tests/test_erp_crud.py::TestPrincipalDashboard::test_list_all_departments PASSED [ 43%]
+tests/test_erp_crud.py::TestPrincipalDashboard::test_list_all_faculty PASSED [ 44%]
+tests/test_erp_crud.py::TestPrincipalDashboard::test_list_all_students PASSED [ 45%]
+tests/test_erp_crud.py::TestPrincipalDashboard::test_get_audit_logs PASSED [ 46%]
+tests/test_erp_crud.py::TestPrincipalAnnouncements::test_list_announcements PASSED [ 47%]
+tests/test_erp_crud.py::TestPrincipalAnnouncements::test_create_announcement PASSED [ 48%]
+tests/test_erp_crud.py::TestPrincipalDepartmentHOD::test_update_department_hod PASSED [ 49%]
+tests/test_erp_crud.py::TestRiskAlerts::test_get_department_risks FAILED [ 50%]
+tests/test_erp_crud.py::TestQuickActions::test_admin_quick_actions_endpoints PASSED [ 51%]
+tests/test_erp_crud.py::TestQuickActions::test_hod_quick_actions_endpoints PASSED [ 52%]
+tests/test_erp_crud.py::TestQuickActions::test_faculty_quick_actions_endpoints PASSED [ 53%]
+tests/test_erp_crud.py::TestQuickActions::test_principal_quick_actions_endpoints PASSED [ 54%]
+tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[admin] FAILED [ 55%]
+tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[hod] FAILED [ 56%]
+tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[faculty] FAILED [ 58%]
+tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[principal] FAILED [ 59%]
+tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[student] FAILED [ 60%]
+tests/test_erp_enhanced.py::TestSettingsAPI::test_get_settings ERROR     [ 61%]
+tests/test_erp_enhanced.py::TestSettingsAPI::test_update_settings_theme ERROR [ 62%]
+tests/test_erp_enhanced.py::TestSettingsAPI::test_update_settings_notifications ERROR [ 63%]
+tests/test_erp_enhanced.py::TestProfileAPI::test_get_profile_admin FAILED [ 64%]
+tests/test_erp_enhanced.py::TestProfileAPI::test_get_profile_student FAILED [ 65%]
+tests/test_erp_enhanced.py::TestPasswordChange::test_change_password_wrong_current ERROR [ 66%]
+tests/test_erp_enhanced.py::TestPasswordChange::test_change_password_correct ERROR [ 67%]
+tests/test_erp_enhanced.py::TestAnnouncementsAPI::test_create_announcement_with_publish_date ERROR [ 68%]
+tests/test_erp_enhanced.py::TestAnnouncementsAPI::test_get_announcements ERROR [ 69%]
+tests/test_erp_enhanced.py::TestGrievanceWorkflow::test_grievance_full_workflow FAILED [ 70%]
+tests/test_erp_enhanced.py::TestDocumentWorkflow::test_document_request_full_workflow FAILED [ 72%]
+tests/test_erp_enhanced.py::TestFeeAnalytics::test_get_fee_analytics ERROR [ 73%]
+tests/test_erp_enhanced.py::TestRiskAnalytics::test_get_risk_analytics ERROR [ 74%]
+tests/test_erp_enhanced.py::TestAuditLogEnhancement::test_get_audit_logs ERROR [ 75%]
+tests/test_erp_enhanced.py::TestDashboardAnalytics::test_get_dashboard_analytics ERROR [ 76%]
+tests/test_erp_enhanced.py::TestSubjectMapping::test_get_subjects ERROR  [ 77%]
+tests/test_erp_enhanced.py::TestSubjectMapping::test_get_mappings ERROR  [ 78%]
+tests/test_erp_enhanced.py::TestFacultyDashboard::test_faculty_profile ERROR [ 79%]
+tests/test_erp_enhanced.py::TestFacultyDashboard::test_get_students_for_attendance ERROR [ 80%]
+tests/test_erp_enhanced.py::TestAdminDashboard::test_get_students ERROR  [ 81%]
+tests/test_erp_enhanced.py::TestAdminDashboard::test_get_faculty ERROR   [ 82%]
+tests/test_erp_enhanced.py::TestAdminDashboard::test_get_pending_verifications ERROR [ 83%]
+tests/test_erp_enhanced.py::TestAttendanceAnalytics::test_get_attendance_analytics ERROR [ 84%]
+tests/test_faculty.py::test_create_faculty ERROR                         [ 86%]
+tests/test_secondary.py::test_announcement_workflow ERROR                [ 87%]
+tests/test_secondary.py::test_grievance_workflow ERROR                   [ 88%]
+tests/test_secondary.py::test_attendance_workflow ERROR                  [ 89%]
+tests/test_services.py::test_auth_service_register ERROR                 [ 90%]
+tests/test_services.py::test_student_service_create ERROR                [ 91%]
+tests/test_services.py::test_document_service_request ERROR              [ 92%]
+tests/test_services.py::test_document_service_workflow ERROR             [ 93%]
+tests/test_students.py::test_create_student ERROR                        [ 94%]
+tests/test_students.py::test_get_students_paginated ERROR                [ 95%]
+tests/test_students.py::test_get_student_not_found ERROR                 [ 96%]
+tests/test_workflows.py::test_attendance_workflow ERROR                  [ 97%]
+tests/test_workflows.py::test_marks_workflow ERROR                       [ 98%]
+tests/test_workflows.py::test_fee_payments_list ERROR                    [100%]
+
+=================================== ERRORS ====================================
+____________________ ERROR at setup of test_register_user _____________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+______________ ERROR at setup of test_login_invalid_credentials _______________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+____________________ ERROR at setup of test_root_endpoint _____________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+______________________ ERROR at setup of test_debug_path ______________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+_____________ ERROR at setup of TestSettingsAPI.test_get_settings _____________
+tests\test_erp_enhanced.py:53: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________ ERROR at setup of TestSettingsAPI.test_update_settings_theme _________
+tests\test_erp_enhanced.py:53: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____ ERROR at setup of TestSettingsAPI.test_update_settings_notifications _____
+tests\test_erp_enhanced.py:53: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___ ERROR at setup of TestPasswordChange.test_change_password_wrong_current ___
+tests\test_erp_enhanced.py:144: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+______ ERROR at setup of TestPasswordChange.test_change_password_correct ______
+tests\test_erp_enhanced.py:144: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_ ERROR at setup of TestAnnouncementsAPI.test_create_announcement_with_publish_date _
+tests\test_erp_enhanced.py:202: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________ ERROR at setup of TestAnnouncementsAPI.test_get_announcements ________
+tests\test_erp_enhanced.py:202: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+__________ ERROR at setup of TestFeeAnalytics.test_get_fee_analytics __________
+tests\test_erp_enhanced.py:404: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_________ ERROR at setup of TestRiskAnalytics.test_get_risk_analytics _________
+tests\test_erp_enhanced.py:436: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________ ERROR at setup of TestAuditLogEnhancement.test_get_audit_logs ________
+tests\test_erp_enhanced.py:469: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____ ERROR at setup of TestDashboardAnalytics.test_get_dashboard_analytics ____
+tests\test_erp_enhanced.py:500: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________ ERROR at setup of TestSubjectMapping.test_get_subjects ____________
+tests\test_erp_enhanced.py:528: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________ ERROR at setup of TestSubjectMapping.test_get_mappings ____________
+tests\test_erp_enhanced.py:528: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_________ ERROR at setup of TestFacultyDashboard.test_faculty_profile _________
+tests\test_erp_enhanced.py:559: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___ ERROR at setup of TestFacultyDashboard.test_get_students_for_attendance ___
+tests\test_erp_enhanced.py:559: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________ ERROR at setup of TestAdminDashboard.test_get_students ____________
+tests\test_erp_enhanced.py:587: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____________ ERROR at setup of TestAdminDashboard.test_get_faculty ____________
+tests\test_erp_enhanced.py:587: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_____ ERROR at setup of TestAdminDashboard.test_get_pending_verifications _____
+tests\test_erp_enhanced.py:587: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___ ERROR at setup of TestAttendanceAnalytics.test_get_attendance_analytics ___
+tests\test_erp_enhanced.py:618: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____________________ ERROR at setup of test_create_faculty ____________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+________________ ERROR at setup of test_announcement_workflow _________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+__________________ ERROR at setup of test_grievance_workflow __________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+_________________ ERROR at setup of test_attendance_workflow __________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+________________ ERROR at setup of test_auth_service_register _________________
+file D:\college2-main\backend\tests\test_services.py, line 11
+  @pytest.mark.asyncio
+  async def test_auth_service_register(db):
+      auth_service = AuthService()
+      user_data = UserCreate(
+          email="test@example.com",
+          password="testpassword",
+          name="Test User",
+          role="student"
+      )
+      user = await auth_service.register_user(user_data)
+      assert user["email"] == "test@example.com"
+      assert user["name"] == "Test User"
+      assert user["role"] == "student"
+      assert "password" not in user
+E       fixture 'db' not found
+>       available fixtures: _session_event_loop, admin_token, admin_user, anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, client, cov, doctest_namespace, event_loop, event_loop_policy, mock_db, mock_redis, monkeypatch, no_cover, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tests/test_services.py::<event_loop>, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\college2-main\backend\tests\test_services.py:11
+________________ ERROR at setup of test_student_service_create ________________
+file D:\college2-main\backend\tests\test_services.py, line 26
+  @pytest.mark.asyncio
+  async def test_student_service_create(db):
+      auth_service = AuthService()
+      student_service = StudentService()
+
+      # Register user first
+      user_data = UserCreate(
+          email="student@example.com",
+          password="studentpassword",
+          name="Student User",
+          role="student"
+      )
+      user = await auth_service.register_user(user_data)
+
+      # Create student profile
+      student_data = StudentCreate(
+          user_id=user["id"],
+          roll_number="ST001",
+          department_id="DEPT001",
+          batch="2023-2027"
+      )
+      student = await student_service.create_student(student_data)
+      assert student["roll_number"] == "ST001"
+      assert student["user_id"] == user["id"]
+E       fixture 'db' not found
+>       available fixtures: _session_event_loop, admin_token, admin_user, anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, client, cov, doctest_namespace, event_loop, event_loop_policy, mock_db, mock_redis, monkeypatch, no_cover, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tests/test_services.py::<event_loop>, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\college2-main\backend\tests\test_services.py:26
+_______________ ERROR at setup of test_document_service_request _______________
+file D:\college2-main\backend\tests\test_services.py, line 51
+  @pytest.mark.asyncio
+  async def test_document_service_request(db):
+      auth_service = AuthService()
+      student_service = StudentService()
+      doc_service = DocumentService()
+
+      # Setup student
+      user_data = UserCreate(
+          email="doc_student@example.com",
+          password="password",
+          name="Doc Student",
+          role="student"
+      )
+      user = await auth_service.register_user(user_data)
+
+      # Create student profile
+      student_data = StudentCreate(
+          user_id=user["id"],
+          roll_number="DOC001",
+          department_id="DEPT001",
+          batch="2023-2027"
+      )
+      await student_service.create_student(student_data)
+
+      # Create document request
+      request_data = DocumentRequestCreate(
+          document_type="bonafide",
+          remarks="For internship"
+      )
+      doc_request = await doc_service.create_document_request(request_data, user)
+      assert doc_request["document_type"] == "bonafide"
+      assert doc_request["status"] == "submitted"
+      assert len(doc_request["workflow_history"]) == 1
+      assert doc_request["workflow_history"][0]["action"] == "submitted"
+E       fixture 'db' not found
+>       available fixtures: _session_event_loop, admin_token, admin_user, anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, client, cov, doctest_namespace, event_loop, event_loop_policy, mock_db, mock_redis, monkeypatch, no_cover, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tests/test_services.py::<event_loop>, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\college2-main\backend\tests\test_services.py:51
+______________ ERROR at setup of test_document_service_workflow _______________
+file D:\college2-main\backend\tests\test_services.py, line 86
+  @pytest.mark.asyncio
+  async def test_document_service_workflow(db):
+      # Setup student and request
+      auth_service = AuthService()
+      student_service = StudentService()
+      doc_service = DocumentService()
+
+      user_data = UserCreate(
+          email="workflow_student@example.com",
+          password="password",
+          name="Workflow Student",
+          role="student"
+      )
+      user = await auth_service.register_user(user_data)
+
+      student_data = StudentCreate(
+          user_id=user["id"],
+          roll_number="WF001",
+          department_id="DEPT001",
+          batch="2023-2027"
+      )
+      await student_service.create_student(student_data)
+
+      request_data = DocumentRequestCreate(
+          document_type="transcript",
+          remarks="For higher studies"
+      )
+      doc_request = await doc_service.create_document_request(request_data, user)
+      request_id = doc_request["id"]
+
+      # Office Verification (Admin)
+      admin_user = {"id": "admin_id", "name": "Admin", "role": "admin"}
+      response = await doc_service.update_workflow_status(
+          request_id, admin_user, "verified", "office_verified",
+          next_level="hod", required_level="office"
+      )
+      assert response["status"] == "office_verified"
+
+      # HOD Approval
+      hod_user = {"id": "hod_id", "name": "HOD", "role": "hod"}
+      response = await doc_service.update_workflow_status(
+          request_id, hod_user, "approved", "hod_approved",
+          next_level="principal", required_level="hod"
+      )
+      assert response["status"] == "hod_approved"
+
+      # Principal Sign
+      principal_user = {"id": "principal_id", "name": "Principal", "role": "principal"}
+      response = await doc_service.update_workflow_status(
+          request_id, principal_user, "signed", "principal_signed",
+          next_level="generated", required_level="principal"
+      )
+      assert response["status"] == "principal_signed"
+E       fixture 'db' not found
+>       available fixtures: _session_event_loop, admin_token, admin_user, anyio_backend, anyio_backend_name, anyio_backend_options, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, client, cov, doctest_namespace, event_loop, event_loop_policy, mock_db, mock_redis, monkeypatch, no_cover, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tests/test_services.py::<event_loop>, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, unused_tcp_port, unused_tcp_port_factory, unused_udp_port, unused_udp_port_factory
+>       use 'pytest --fixtures [testpath]' for help on them.
+
+D:\college2-main\backend\tests\test_services.py:86
+____________________ ERROR at setup of test_create_student ____________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+________________ ERROR at setup of test_get_students_paginated ________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+________________ ERROR at setup of test_get_student_not_found _________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+_________________ ERROR at setup of test_attendance_workflow __________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+____________________ ERROR at setup of test_marks_workflow ____________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+__________________ ERROR at setup of test_fee_payments_list ___________________
+ScopeMismatch: You tried to access the function scoped fixture mock_db with a session scoped request object, involved factories:
+tests\conftest.py:62:  def client(mock_db, mock_redis)
+tests\conftest.py:13:  def mock_db()
+================================== FAILURES ===================================
+__________________ TestAdminFacultyCRUD.test_create_faculty ___________________
+tests\test_erp_crud.py:229: in test_create_faculty
+    assert response.status_code == 200
+E   assert 405 == 200
+E    +  where 405 = <Response [405]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Create faculty: 405 - {"detail":"Method Not Allowed"}
+__________ TestHODSubjectMapping.test_create_subject_faculty_mapping __________
+tests\test_erp_crud.py:383: in test_create_subject_faculty_mapping
+    assert response.status_code in [200, 400]
+E   assert 422 in [200, 400]
+E    +  where 422 = <Response [422]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Create mapping: 422 - {"detail":[{"type":"missing","loc":["body"],"msg":"Field required","input":null,"url":"https://errors.pydantic.dev/2.6/v/missing"}]}
+__________________ TestRiskAlerts.test_get_department_risks ___________________
+tests\test_erp_crud.py:643: in test_get_department_risks
+    assert response.status_code == 200
+E   assert 404 == 200
+E    +  where 404 = <Response [404]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Department risks: 404
+_______________ TestAuthentication.test_login_all_roles[admin] ________________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________________ TestAuthentication.test_login_all_roles[hod] _________________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+______________ TestAuthentication.test_login_all_roles[faculty] _______________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_____________ TestAuthentication.test_login_all_roles[principal] ______________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+______________ TestAuthentication.test_login_all_roles[student] _______________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____________________ TestProfileAPI.test_get_profile_admin ____________________
+tests\test_erp_enhanced.py:106: in test_get_profile_admin
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________________ TestProfileAPI.test_get_profile_student ___________________
+tests\test_erp_enhanced.py:121: in test_get_profile_student
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_____________ TestGrievanceWorkflow.test_grievance_full_workflow ______________
+tests\test_erp_enhanced.py:253: in test_grievance_full_workflow
+    student_token = self.get_token("student")
+tests\test_erp_enhanced.py:244: in get_token
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+__________ TestDocumentWorkflow.test_document_request_full_workflow ___________
+tests\test_erp_enhanced.py:336: in test_document_request_full_workflow
+    student_token = self.get_token("student")
+tests\test_erp_enhanced.py:327: in get_token
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+============================== warnings summary ===============================
+app\main.py:64
+  D:\college2-main\backend\app\main.py:64: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+app\main.py:70
+  D:\college2-main\backend\app\main.py:70: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("shutdown")
+
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.2.1) or chardet (7.0.1)/charset_normalizer (3.3.2) doesn't match a supported version!
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_erp_crud.py::TestAdminFacultyCRUD::test_create_faculty - as...
+FAILED tests/test_erp_crud.py::TestHODSubjectMapping::test_create_subject_faculty_mapping
+FAILED tests/test_erp_crud.py::TestRiskAlerts::test_get_department_risks - as...
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[admin]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[hod]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[faculty]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[principal]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[student]
+FAILED tests/test_erp_enhanced.py::TestProfileAPI::test_get_profile_admin - r...
+FAILED tests/test_erp_enhanced.py::TestProfileAPI::test_get_profile_student
+FAILED tests/test_erp_enhanced.py::TestGrievanceWorkflow::test_grievance_full_workflow
+FAILED tests/test_erp_enhanced.py::TestDocumentWorkflow::test_document_request_full_workflow
+ERROR tests/test_auth.py::test_register_user - Failed: ScopeMismatch: You tri...
+ERROR tests/test_auth.py::test_login_invalid_credentials - Failed: ScopeMisma...
+ERROR tests/test_auth.py::test_root_endpoint - Failed: ScopeMismatch: You tri...
+ERROR tests/test_debug.py::test_debug_path - Failed: ScopeMismatch: You tried...
+ERROR tests/test_erp_enhanced.py::TestSettingsAPI::test_get_settings - reques...
+ERROR tests/test_erp_enhanced.py::TestSettingsAPI::test_update_settings_theme
+ERROR tests/test_erp_enhanced.py::TestSettingsAPI::test_update_settings_notifications
+ERROR tests/test_erp_enhanced.py::TestPasswordChange::test_change_password_wrong_current
+ERROR tests/test_erp_enhanced.py::TestPasswordChange::test_change_password_correct
+ERROR tests/test_erp_enhanced.py::TestAnnouncementsAPI::test_create_announcement_with_publish_date
+ERROR tests/test_erp_enhanced.py::TestAnnouncementsAPI::test_get_announcements
+ERROR tests/test_erp_enhanced.py::TestFeeAnalytics::test_get_fee_analytics - ...
+ERROR tests/test_erp_enhanced.py::TestRiskAnalytics::test_get_risk_analytics
+ERROR tests/test_erp_enhanced.py::TestAuditLogEnhancement::test_get_audit_logs
+ERROR tests/test_erp_enhanced.py::TestDashboardAnalytics::test_get_dashboard_analytics
+ERROR tests/test_erp_enhanced.py::TestSubjectMapping::test_get_subjects - req...
+ERROR tests/test_erp_enhanced.py::TestSubjectMapping::test_get_mappings - req...
+ERROR tests/test_erp_enhanced.py::TestFacultyDashboard::test_faculty_profile
+ERROR tests/test_erp_enhanced.py::TestFacultyDashboard::test_get_students_for_attendance
+ERROR tests/test_erp_enhanced.py::TestAdminDashboard::test_get_students - req...
+ERROR tests/test_erp_enhanced.py::TestAdminDashboard::test_get_faculty - requ...
+ERROR tests/test_erp_enhanced.py::TestAdminDashboard::test_get_pending_verifications
+ERROR tests/test_erp_enhanced.py::TestAttendanceAnalytics::test_get_attendance_analytics
+ERROR tests/test_faculty.py::test_create_faculty - Failed: ScopeMismatch: You...
+ERROR tests/test_secondary.py::test_announcement_workflow - Failed: ScopeMism...
+ERROR tests/test_secondary.py::test_grievance_workflow - Failed: ScopeMismatc...
+ERROR tests/test_secondary.py::test_attendance_workflow - Failed: ScopeMismat...
+ERROR tests/test_services.py::test_auth_service_register
+ERROR tests/test_services.py::test_student_service_create
+ERROR tests/test_services.py::test_document_service_request
+ERROR tests/test_services.py::test_document_service_workflow
+ERROR tests/test_students.py::test_create_student - Failed: ScopeMismatch: Yo...
+ERROR tests/test_students.py::test_get_students_paginated - Failed: ScopeMism...
+ERROR tests/test_students.py::test_get_student_not_found - Failed: ScopeMisma...
+ERROR tests/test_workflows.py::test_attendance_workflow - Failed: ScopeMismat...
+ERROR tests/test_workflows.py::test_marks_workflow - Failed: ScopeMismatch: Y...
+ERROR tests/test_workflows.py::test_fee_payments_list - Failed: ScopeMismatch...
+====== 12 failed, 44 passed, 5 warnings, 37 errors in 266.12s (0:04:26) =======
+
+
+ERRORS:

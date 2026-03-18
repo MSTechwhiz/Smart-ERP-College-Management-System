@@ -1,0 +1,164 @@
+{
+  "brand_identity": {
+    "name": "AcademiaOS",
+    "tone": "Professional, Intelligent, Structured, Trustworthy",
+    "archetype": "The Architect (Swiss & High-Contrast) + The Guardian (Earthy/Institutional)",
+    "design_philosophy": "Data Clarity over Decoration. Every pixel must serve the institution's efficiency."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["600", "700", "800"],
+      "letter_spacing": "-0.02em",
+      "usage": "Use for all page titles, dashboard widget headers, and modal titles. DO NOT use Inter for headings."
+    },
+    "body": {
+      "font_family": "Inter, system-ui, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for data tables, form inputs, and general text. Optimize for high-density reading."
+    },
+    "monospace": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Use for IDs (Student ID, Course Code), grades, and financial figures."
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "h4": "text-xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-normal",
+      "caption": "text-sm text-muted-foreground",
+      "tiny": "text-xs font-medium uppercase tracking-wider"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Institutional Slate",
+        "class": "bg-slate-900 text-white",
+        "hex": "#0F172A",
+        "usage": "Main navigation, primary buttons, active states."
+      },
+      "secondary": {
+        "name": "Academic Bronze",
+        "class": "bg-amber-600 text-white",
+        "hex": "#D97706",
+        "usage": "Highlights, premium badges, 'Honors' indicators."
+      },
+      "accent": {
+        "name": "Tech Blue",
+        "class": "bg-blue-600 text-white",
+        "hex": "#2563EB",
+        "usage": "Links, active tabs, focused states."
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "dark": "#020617",
+        "paper_light": "#FFFFFF",
+        "paper_dark": "#0F172A"
+      },
+      "functional": {
+        "success": "text-emerald-600 bg-emerald-50 border-emerald-200",
+        "warning": "text-amber-600 bg-amber-50 border-amber-200",
+        "error": "text-rose-600 bg-rose-50 border-rose-200",
+        "info": "text-sky-600 bg-sky-50 border-sky-200"
+      }
+    },
+    "gradients": {
+      "subtle_mesh": "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-100 via-slate-50 to-white",
+      "dark_glow": "bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-800 to-slate-950"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "grid_type": "Mode A: Tetris Grid",
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "spacing": "gap-8 md:gap-12"
+    },
+    "dashboard": {
+      "grid_type": "Mode B: High Density Bento",
+      "container": "container mx-auto p-4 md:p-6",
+      "spacing": "gap-4",
+      "card_style": "rounded-xl border border-border bg-card text-card-foreground shadow-sm"
+    }
+  },
+  "components": {
+    "cards": {
+      "default": "group relative overflow-hidden rounded-xl border bg-white dark:bg-slate-900 p-6 shadow-sm transition-all hover:shadow-md",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-slate-800/50"
+    },
+    "buttons": {
+      "primary": "rounded-lg bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-4 py-2 font-medium transition-transform active:scale-95",
+      "secondary": "rounded-lg border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 transition-transform active:scale-95",
+      "ghost": "rounded-lg hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+    },
+    "inputs": {
+      "default": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "badges": {
+      "outline": "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "status_success": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400 border-transparent",
+      "status_warning": "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400 border-transparent"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "card": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "float": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)"
+    },
+    "borders": {
+      "subtle": "border border-slate-200 dark:border-slate-800",
+      "active": "border-l-4 border-primary"
+    },
+    "glassmorphism": {
+      "header": "bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+    "page_enter": {
+      "initial": { "opacity": 0, "y": 10 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -10 },
+      "transition": { "duration": 0.3 }
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1758413148947-fa1c2595525c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB1bml2ZXJzaXR5JTIwY2FtcHVzJTIwYXJjaGl0ZWN0dXJlJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzcwNTI0MDgyfDA&ixlib=rb-4.1.0&q=85",
+      "campus_building": "https://images.unsplash.com/photo-1741766936431-406804fc36c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjB1bml2ZXJzaXR5JTIwY2FtcHVzJTIwYXJjaGl0ZWN0dXJlJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzcwNTI0MDgyfDA&ixlib=rb-4.1.0&q=85",
+      "students_group": "https://images.unsplash.com/photo-1744320911030-1ab998d994d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHw0fHxjb2xsZWdlJTIwc3R1ZGVudHMlMjBkaXZlcnNlJTIwc3R1ZHlpbmclMjBncm91cCUyMGhhcHB5fGVufDB8fHx8MTc3MDUyNDA4M3ww&ixlib=rb-4.1.0&q=85",
+      "logo_partner": "https://images.unsplash.com/photo-1686140386811-099f53c0dd54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjB0ZWNoJTIwbG9nbyUyMHZlY3RvcnxlbnwwfHx8fDE3NzA1MjQwODV8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "Use Lucide React icons. Stroke width: 1.5px for UI, 2px for small icons."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text meets WCAG AA (4.5:1). Use 'text-slate-600' or darker on white backgrounds.",
+    "focus": "All interactive elements must have visible focus rings: 'focus-visible:ring-2 focus-visible:ring-primary'.",
+    "touch_targets": "Minimum 44x44px for all buttons on mobile."
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Use the 'Manrope' font for all headings. Import it via Google Fonts or similar.",
+      "Implement a responsive sidebar for the dashboard layout.",
+      "Use shadcn/ui components for all interactive elements (dialogs, dropdowns, forms).",
+      "Ensure the 'Role Selection' landing page uses the 'Tetris Grid' layout with the Hero Background image.",
+      "Strictly follow the color palette. Do not use random hex codes.",
+      "Ensure dark mode support using Tailwind's 'dark:' variant."
+    ],
+    "specific_pages": {
+      "landing": "Hero section with 'University' background. Cards for 'Principal', 'Admin', 'Faculty', 'Student' using the Card component with unique icons.",
+      "dashboard_principal": "High-density grid. Top row: Key Metrics (Total Students, Revenue, Attendance). Middle: Charts (Recharts). Bottom: Recent Activity Log.",
+      "student_portal": "More visual. Use the 'students_group' image in a welcome banner. Display CGPA and Attendance in large, circular progress bars."
+    }
+  },
+  "universal_guidelines": [
+    "Don't make generic centered layouts. Use grids and asymmetry.",
+    "Add 'data-testid' to all interactive elements.",
+    "Use 'sonner' for toast notifications.",
+    "Do not use 'transition: all'. Animate specific properties.",
+    "Check for 'transparent' backgrounds that might overlay content and fix them with solid colors or blurs."
+  ]
+}

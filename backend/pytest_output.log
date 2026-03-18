@@ -1,0 +1,777 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.6, pytest-8.0.2, pluggy-1.5.0
+rootdir: D:\college2-main\backend
+plugins: anyio-4.3.0, asyncio-0.23.5, cov-4.1.0
+asyncio: mode=Mode.STRICT
+collected 84 items
+
+tests\test_auth.py .F                                                    [  2%]
+tests\test_erp_crud.py FFFFFssssssssssssssssssssssssssssssssssssssssss   [ 58%]
+tests\test_erp_enhanced.py FFFFFEEEFFEEEEFFEEEEEEEEEEEE                  [ 91%]
+tests\test_services.py FFFF                                              [ 96%]
+tests\test_students.py ...                                               [100%]
+
+=================================== ERRORS ====================================
+_____________ ERROR at setup of TestSettingsAPI.test_get_settings _____________
+tests\test_erp_enhanced.py:53: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________ ERROR at setup of TestSettingsAPI.test_update_settings_theme _________
+tests\test_erp_enhanced.py:53: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____ ERROR at setup of TestSettingsAPI.test_update_settings_notifications _____
+tests\test_erp_enhanced.py:53: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___ ERROR at setup of TestPasswordChange.test_change_password_wrong_current ___
+tests\test_erp_enhanced.py:144: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+______ ERROR at setup of TestPasswordChange.test_change_password_correct ______
+tests\test_erp_enhanced.py:144: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_ ERROR at setup of TestAnnouncementsAPI.test_create_announcement_with_publish_date _
+tests\test_erp_enhanced.py:202: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________ ERROR at setup of TestAnnouncementsAPI.test_get_announcements ________
+tests\test_erp_enhanced.py:202: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+__________ ERROR at setup of TestFeeAnalytics.test_get_fee_analytics __________
+tests\test_erp_enhanced.py:404: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_________ ERROR at setup of TestRiskAnalytics.test_get_risk_analytics _________
+tests\test_erp_enhanced.py:436: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________ ERROR at setup of TestAuditLogEnhancement.test_get_audit_logs ________
+tests\test_erp_enhanced.py:469: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____ ERROR at setup of TestDashboardAnalytics.test_get_dashboard_analytics ____
+tests\test_erp_enhanced.py:500: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________ ERROR at setup of TestSubjectMapping.test_get_subjects ____________
+tests\test_erp_enhanced.py:528: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________ ERROR at setup of TestSubjectMapping.test_get_mappings ____________
+tests\test_erp_enhanced.py:528: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_________ ERROR at setup of TestFacultyDashboard.test_faculty_profile _________
+tests\test_erp_enhanced.py:559: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___ ERROR at setup of TestFacultyDashboard.test_get_students_for_attendance ___
+tests\test_erp_enhanced.py:559: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________ ERROR at setup of TestAdminDashboard.test_get_students ____________
+tests\test_erp_enhanced.py:587: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____________ ERROR at setup of TestAdminDashboard.test_get_faculty ____________
+tests\test_erp_enhanced.py:587: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_____ ERROR at setup of TestAdminDashboard.test_get_pending_verifications _____
+tests\test_erp_enhanced.py:587: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___ ERROR at setup of TestAttendanceAnalytics.test_get_attendance_analytics ___
+tests\test_erp_enhanced.py:618: in setup
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+================================== FAILURES ===================================
+_______________________ test_login_invalid_credentials ________________________
+tests\test_auth.py:17: in test_login_invalid_credentials
+    assert response.status_code == 401
+E   assert 405 == 401
+E    +  where 405 = <Response [405 Method Not Allowed]>.status_code
+---------------------------- Captured stdout call -----------------------------
+2026-03-07 08:59:26,263 - [RID:a3b3f43c-6738-4696-88dc-416935246e04] - root - INFO - Method: POST Path: /api/login Status: 405 ProcessTime: 0.0010s
+---------------------------- Captured stderr call -----------------------------
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pytest\__main__.py", line 7, in <module>
+    raise SystemExit(pytest.console_main())
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 198, in console_main
+    code = main()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: Union[ExitCode, int] = config.hook.pytest_cmdline_main(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 320, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 273, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 327, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 352, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 115, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 134, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 223, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 262, in call_runtest_hook
+    return CallInfo.from_call(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 342, in from_call
+    result: Optional[TResult] = func()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 263, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 170, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 1831, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 194, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\college2-main\backend\tests\test_auth.py", line 13, in test_login_invalid_credentials
+    response = client.post(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 608, in post
+    return super().post(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1145, in post
+    return self.request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 491, in request
+    return super().request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 827, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1026, in _send_single_request
+    logger.info(
+Message: 'HTTP Request: %s %s "%s %d %s"'
+Arguments: ('POST', URL('http://testserver/api/login'), 'HTTP/1.1', 405, 'Method Not Allowed')
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pytest\__main__.py", line 7, in <module>
+    raise SystemExit(pytest.console_main())
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 198, in console_main
+    code = main()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: Union[ExitCode, int] = config.hook.pytest_cmdline_main(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 320, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 273, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 327, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 352, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 115, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 134, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 223, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 262, in call_runtest_hook
+    return CallInfo.from_call(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 342, in from_call
+    result: Optional[TResult] = func()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 263, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 170, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 1831, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 194, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\college2-main\backend\tests\test_auth.py", line 13, in test_login_invalid_credentials
+    response = client.post(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 608, in post
+    return super().post(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1145, in post
+    return self.request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 491, in request
+    return super().request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 827, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1026, in _send_single_request
+    logger.info(
+Message: 'HTTP Request: %s %s "%s %d %s"'
+Arguments: ('POST', URL('http://testserver/api/login'), 'HTTP/1.1', 405, 'Method Not Allowed')
+------------------------------ Captured log call ------------------------------
+INFO     root:logging.py:45 Method: POST Path: /api/login Status: 405 ProcessTime: 0.0010s
+INFO     httpx:_client.py:1026 HTTP Request: POST http://testserver/api/login "HTTP/1.1 405 Method Not Allowed"
+__________________________ TestAuth.test_admin_login __________________________
+tests\test_erp_crud.py:26: in test_admin_login
+    assert response.status_code == 200
+E   assert 404 == 200
+E    +  where 404 = <Response [404]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Admin login: 404
+___________________________ TestAuth.test_hod_login ___________________________
+tests\test_erp_crud.py:35: in test_hod_login
+    assert response.status_code == 200
+E   assert 404 == 200
+E    +  where 404 = <Response [404]>.status_code
+---------------------------- Captured stdout call -----------------------------
+HOD login: 404
+_________________________ TestAuth.test_faculty_login _________________________
+tests\test_erp_crud.py:44: in test_faculty_login
+    assert response.status_code == 200
+E   assert 404 == 200
+E    +  where 404 = <Response [404]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Faculty login: 404
+________________________ TestAuth.test_principal_login ________________________
+tests\test_erp_crud.py:53: in test_principal_login
+    assert response.status_code == 200
+E   assert 404 == 200
+E    +  where 404 = <Response [404]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Principal login: 404
+_________________________ TestAuth.test_invalid_login _________________________
+tests\test_erp_crud.py:64: in test_invalid_login
+    assert response.status_code == 401
+E   assert 404 == 401
+E    +  where 404 = <Response [404]>.status_code
+---------------------------- Captured stdout call -----------------------------
+Invalid login: 404
+_______________ TestAuthentication.test_login_all_roles[admin] ________________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+________________ TestAuthentication.test_login_all_roles[hod] _________________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+______________ TestAuthentication.test_login_all_roles[faculty] _______________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_____________ TestAuthentication.test_login_all_roles[principal] ______________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+______________ TestAuthentication.test_login_all_roles[student] _______________
+tests\test_erp_enhanced.py:35: in test_login_all_roles
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+____________________ TestProfileAPI.test_get_profile_admin ____________________
+tests\test_erp_enhanced.py:106: in test_get_profile_admin
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+___________________ TestProfileAPI.test_get_profile_student ___________________
+tests\test_erp_enhanced.py:121: in test_get_profile_student
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_____________ TestGrievanceWorkflow.test_grievance_full_workflow ______________
+tests\test_erp_enhanced.py:253: in test_grievance_full_workflow
+    student_token = self.get_token("student")
+tests\test_erp_enhanced.py:244: in get_token
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+__________ TestDocumentWorkflow.test_document_request_full_workflow ___________
+tests\test_erp_enhanced.py:336: in test_document_request_full_workflow
+    student_token = self.get_token("student")
+tests\test_erp_enhanced.py:327: in get_token
+    response = self.session.post(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:637: in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:575: in request
+    prep = self.prepare_request(req)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py:484: in prepare_request
+    p.prepare(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:367: in prepare
+    self.prepare_url(url, params)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py:438: in prepare_url
+    raise MissingSchema(
+E   requests.exceptions.MissingSchema: Invalid URL '/api/auth/login': No scheme supplied. Perhaps you meant https:///api/auth/login?
+_________________________ test_auth_service_register __________________________
+tests\test_services.py:13: in test_auth_service_register
+    auth_service = AuthService()
+E   TypeError: AuthService.__init__() missing 1 required positional argument: 'user_repo'
+_________________________ test_student_service_create _________________________
+tests\test_services.py:28: in test_student_service_create
+    auth_service = AuthService()
+E   TypeError: AuthService.__init__() missing 1 required positional argument: 'user_repo'
+________________________ test_document_service_request ________________________
+tests\test_services.py:53: in test_document_service_request
+    auth_service = AuthService()
+E   TypeError: AuthService.__init__() missing 1 required positional argument: 'user_repo'
+_______________________ test_document_service_workflow ________________________
+tests\test_services.py:89: in test_document_service_workflow
+    auth_service = AuthService()
+E   TypeError: AuthService.__init__() missing 1 required positional argument: 'user_repo'
+============================== warnings summary ===============================
+app\main.py:57
+  D:\college2-main\backend\app\main.py:57: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+app\main.py:62
+  D:\college2-main\backend\app\main.py:62: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("shutdown")
+
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.2.1) or chardet (7.0.1)/charset_normalizer (3.3.2) doesn't match a supported version!
+    warnings.warn(
+
+tests/test_auth.py::test_root
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:680: DeprecationWarning: The 'app' shortcut is now deprecated. Use the explicit style 'transport=WSGITransport(app=...)' instead.
+    warnings.warn(message, DeprecationWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_auth.py::test_login_invalid_credentials - assert 405 == 401
+FAILED tests/test_erp_crud.py::TestAuth::test_admin_login - assert 404 == 200
+FAILED tests/test_erp_crud.py::TestAuth::test_hod_login - assert 404 == 200
+FAILED tests/test_erp_crud.py::TestAuth::test_faculty_login - assert 404 == 200
+FAILED tests/test_erp_crud.py::TestAuth::test_principal_login - assert 404 ==...
+FAILED tests/test_erp_crud.py::TestAuth::test_invalid_login - assert 404 == 401
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[admin]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[hod]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[faculty]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[principal]
+FAILED tests/test_erp_enhanced.py::TestAuthentication::test_login_all_roles[student]
+FAILED tests/test_erp_enhanced.py::TestProfileAPI::test_get_profile_admin - r...
+FAILED tests/test_erp_enhanced.py::TestProfileAPI::test_get_profile_student
+FAILED tests/test_erp_enhanced.py::TestGrievanceWorkflow::test_grievance_full_workflow
+FAILED tests/test_erp_enhanced.py::TestDocumentWorkflow::test_document_request_full_workflow
+FAILED tests/test_services.py::test_auth_service_register - TypeError: AuthSe...
+FAILED tests/test_services.py::test_student_service_create - TypeError: AuthS...
+FAILED tests/test_services.py::test_document_service_request - TypeError: Aut...
+FAILED tests/test_services.py::test_document_service_workflow - TypeError: Au...
+ERROR tests/test_erp_enhanced.py::TestSettingsAPI::test_get_settings - reques...
+ERROR tests/test_erp_enhanced.py::TestSettingsAPI::test_update_settings_theme
+ERROR tests/test_erp_enhanced.py::TestSettingsAPI::test_update_settings_notifications
+ERROR tests/test_erp_enhanced.py::TestPasswordChange::test_change_password_wrong_current
+ERROR tests/test_erp_enhanced.py::TestPasswordChange::test_change_password_correct
+ERROR tests/test_erp_enhanced.py::TestAnnouncementsAPI::test_create_announcement_with_publish_date
+ERROR tests/test_erp_enhanced.py::TestAnnouncementsAPI::test_get_announcements
+ERROR tests/test_erp_enhanced.py::TestFeeAnalytics::test_get_fee_analytics - ...
+ERROR tests/test_erp_enhanced.py::TestRiskAnalytics::test_get_risk_analytics
+ERROR tests/test_erp_enhanced.py::TestAuditLogEnhancement::test_get_audit_logs
+ERROR tests/test_erp_enhanced.py::TestDashboardAnalytics::test_get_dashboard_analytics
+ERROR tests/test_erp_enhanced.py::TestSubjectMapping::test_get_subjects - req...
+ERROR tests/test_erp_enhanced.py::TestSubjectMapping::test_get_mappings - req...
+ERROR tests/test_erp_enhanced.py::TestFacultyDashboard::test_faculty_profile
+ERROR tests/test_erp_enhanced.py::TestFacultyDashboard::test_get_students_for_attendance
+ERROR tests/test_erp_enhanced.py::TestAdminDashboard::test_get_students - req...
+ERROR tests/test_erp_enhanced.py::TestAdminDashboard::test_get_faculty - requ...
+ERROR tests/test_erp_enhanced.py::TestAdminDashboard::test_get_pending_verifications
+ERROR tests/test_erp_enhanced.py::TestAttendanceAnalytics::test_get_attendance_analytics
+====== 19 failed, 4 passed, 42 skipped, 6 warnings, 19 errors in 28.38s =======

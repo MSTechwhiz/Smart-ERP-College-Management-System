@@ -1,0 +1,402 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.6, pytest-8.0.2, pluggy-1.5.0
+rootdir: D:\college2-main\backend
+plugins: anyio-4.3.0, asyncio-0.23.5, cov-4.1.0
+asyncio: mode=Mode.STRICT
+collected 3 items
+
+tests\test_students.py F..                                               [100%]--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+
+
+================================== FAILURES ===================================
+_______________________ test_get_students_unauthorized ________________________
+tests\test_students.py:10: in test_get_students_unauthorized
+    assert response.status_code == 401
+E   assert 403 == 401
+E    +  where 403 = <Response [403 Forbidden]>.status_code
+---------------------------- Captured stdout call -----------------------------
+2026-03-06 23:49:15,058 - [RID:734a843a-5a61-454e-bc9a-520e08e4e451] - root - INFO - Method: GET Path: /api/students Status: 403 ProcessTime: 0.0010s
+---------------------------- Captured stderr call -----------------------------
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pytest\__main__.py", line 7, in <module>
+    raise SystemExit(pytest.console_main())
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 198, in console_main
+    code = main()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: Union[ExitCode, int] = config.hook.pytest_cmdline_main(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 320, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 273, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 327, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 352, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 115, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 134, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 223, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 262, in call_runtest_hook
+    return CallInfo.from_call(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 342, in from_call
+    result: Optional[TResult] = func()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 263, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 170, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 1831, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 194, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\college2-main\backend\tests\test_students.py", line 9, in test_get_students_unauthorized
+    response = client.get("/api/students")
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 523, in get
+    return super().get(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1054, in get
+    return self.request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 491, in request
+    return super().request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 827, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1026, in _send_single_request
+    logger.info(
+Message: 'HTTP Request: %s %s "%s %d %s"'
+Arguments: ('GET', URL('http://testserver/api/students'), 'HTTP/1.1', 403, 'Forbidden')
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pytest\__main__.py", line 7, in <module>
+    raise SystemExit(pytest.console_main())
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 198, in console_main
+    code = main()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: Union[ExitCode, int] = config.hook.pytest_cmdline_main(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 320, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 273, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 327, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\main.py", line 352, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 115, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 134, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 223, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 262, in call_runtest_hook
+    return CallInfo.from_call(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 342, in from_call
+    result: Optional[TResult] = func()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 263, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 170, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 1831, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 194, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\college2-main\backend\tests\test_students.py", line 9, in test_get_students_unauthorized
+    response = client.get("/api/students")
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 523, in get
+    return super().get(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1054, in get
+    return self.request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 491, in request
+    return super().request(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 827, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1026, in _send_single_request
+    logger.info(
+Message: 'HTTP Request: %s %s "%s %d %s"'
+Arguments: ('GET', URL('http://testserver/api/students'), 'HTTP/1.1', 403, 'Forbidden')  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2024, in drop_database
+    with self._conn_for_writes(session, operation=_Op.DROP_DATABASE) as conn:
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1333, in _conn_for_writes
+    server = self._select_server(writable_server_selector, session, operation)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1316, in _select_server
+    server = topology.select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 369, in select_server
+    server = self._select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 347, in _select_server
+    servers = self.select_servers(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 254, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 309, in _select_servers_loop
+    _info_log(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\logger.py", line 96, in _info_log
+    logger.info(LogMessage(**fields))
+Message: <pymongo.logger.LogMessage object at 0x00000210B76E2620>
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+
+------------------------------ Captured log call ------------------------------
+INFO     root:logging.py:45 Method: GET Path: /api/students Status: 403 ProcessTime: 0.0010s
+INFO     httpx:_client.py:1026 HTTP Request: GET http://testserver/api/students "HTTP/1.1 403 Forbidden"
+============================== warnings summary ===============================
+app\main.py:57
+  D:\college2-main\backend\app\main.py:57: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+app\main.py:62
+  D:\college2-main\backend\app\main.py:62: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("shutdown")
+
+tests/test_students.py::test_get_students_unauthorized
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:680: DeprecationWarning: The 'app' shortcut is now deprecated. Use the explicit style 'transport=WSGITransport(app=...)' instead.
+    warnings.warn(message, DeprecationWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_students.py::test_get_students_unauthorized - assert 403 ==...
+=================== 1 failed, 2 passed, 5 warnings in 0.39s ===================
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2024, in drop_database
+    with self._conn_for_writes(session, operation=_Op.DROP_DATABASE) as conn:
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1333, in _conn_for_writes
+    server = self._select_server(writable_server_selector, session, operation)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1316, in _select_server
+    server = topology.select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 369, in select_server
+    server = self._select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 347, in _select_server
+    servers = self.select_servers(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 254, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 309, in _select_servers_loop
+    _info_log(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\logger.py", line 96, in _info_log
+    logger.info(LogMessage(**fields))
+Message: <pymongo.logger.LogMessage object at 0x00000210B76E2620>
+Arguments: ()

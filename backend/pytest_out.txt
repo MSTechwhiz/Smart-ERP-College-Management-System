@@ -1,0 +1,624 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.6, pytest-8.0.2, pluggy-1.5.0
+rootdir: D:\college2-main\backend
+plugins: anyio-4.3.0, asyncio-0.23.5, cov-4.1.0
+asyncio: mode=Mode.STRICT
+collected 3 items
+
+tests\test_students.py F.F                                               [100%]--- Logging error ---
+
+
+================================== FAILURES ===================================
+_______________________ test_get_students_unauthorized ________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 342, in from_call
+    |     result: Optional[TResult] = func()
+    |                                 ^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 263, in <lambda>
+    |     lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 139, in _multicall
+    |     raise exception.with_traceback(exception.__traceback__)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\threadexception.py", line 87, in pytest_runtest_call
+    |     yield from thread_exception_runtest_hook()
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\threadexception.py", line 63, in thread_exception_runtest_hook
+    |     yield
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\unraisableexception.py", line 90, in pytest_runtest_call
+    |     yield from unraisable_exception_runtest_hook()
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\unraisableexception.py", line 65, in unraisable_exception_runtest_hook
+    |     yield
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\logging.py", line 839, in pytest_runtest_call
+    |     yield from self._runtest_for(item, "call")
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\logging.py", line 822, in _runtest_for
+    |     yield
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\capture.py", line 882, in pytest_runtest_call
+    |     return (yield)
+    |             ^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\skipping.py", line 256, in pytest_runtest_call
+    |     return (yield)
+    |             ^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    |     res = hook_impl.function(*args)
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    |     raise e
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 170, in pytest_runtest_call
+    |     item.runtest()
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 1831, in runtest
+    |     self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 182, in _multicall
+    |     return outcome.get_result()
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_result.py", line 100, in get_result
+    |     raise exc.with_traceback(exc.__traceback__)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    |     res = hook_impl.function(*args)
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 194, in pytest_pyfunc_call
+    |     result = testfunction(**testargs)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\college2-main\backend\tests\test_students.py", line 9, in test_get_students_unauthorized
+    |     response = client.get("/api/students")
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 523, in get
+    |     return super().get(
+    |            ^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1054, in get
+    |     return self.request(
+    |            ^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 491, in request
+    |     return super().request(
+    |            ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 827, in request
+    |     return self.send(request, auth=auth, follow_redirects=follow_redirects)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 914, in send
+    |     response = self._send_handling_auth(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    |     response = self._send_handling_redirects(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    |     response = self._send_single_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    |     response = transport.handle_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 372, in handle_request
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 369, in handle_request
+    |     portal.call(self.app, scope, receive, send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py", line 288, in call
+    |     return cast(T_Retval, self.start_task_soon(func, *args).result())
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 456, in result
+    |     return self.__get_result()
+    |            ^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    |     raise self._exception
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py", line 217, in _call_func
+    |     retval = await retval_or_awaitable
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py", line 93, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\college2-main\backend\app\core\logging.py", line 44, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py", line 93, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\college2-main\backend\app\core\rate_limit.py", line 21, in dispatch
+    |     client_ip = request.client.host
+    |                 ^^^^^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'host'
+    +------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+
+During handling of the above exception, another exception occurred:
+tests\test_students.py:9: in test_get_students_unauthorized
+    response = client.get("/api/students")
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:523: in get
+    return super().get(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:1054: in get
+    return self.request(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:491: in request
+    return super().request(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:827: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:914: in send
+    response = self._send_handling_auth(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:942: in _send_handling_auth
+    response = self._send_handling_redirects(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:979: in _send_handling_redirects
+    response = self._send_single_request(request)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:1015: in _send_single_request
+    response = transport.handle_request(request)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:372: in handle_request
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:369: in handle_request
+    portal.call(self.app, scope, receive, send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py:288: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py:217: in _call_func
+    retval = await retval_or_awaitable
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:1054: in __call__
+    await super().__call__(scope, receive, send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\applications.py:123: in __call__
+    await self.middleware_stack(scope, receive, send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py:186: in __call__
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:189: in __call__
+    with collapse_excgroups():
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py:155: in __exit__
+    self.gen.throw(typ, value, traceback)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py:93: in collapse_excgroups
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:191: in __call__
+    response = await self.dispatch_func(request, call_next)
+app\core\logging.py:44: in dispatch
+    response = await call_next(request)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:165: in call_next
+    raise app_exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:151: in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:189: in __call__
+    with collapse_excgroups():
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py:155: in __exit__
+    self.gen.throw(typ, value, traceback)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py:93: in collapse_excgroups
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:191: in __call__
+    response = await self.dispatch_func(request, call_next)
+app\core\rate_limit.py:21: in dispatch
+    client_ip = request.client.host
+E   AttributeError: 'NoneType' object has no attribute 'host'
+______________________________ test_health_check ______________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 342, in from_call
+    |     result: Optional[TResult] = func()
+    |                                 ^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 263, in <lambda>
+    |     lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 139, in _multicall
+    |     raise exception.with_traceback(exception.__traceback__)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\threadexception.py", line 87, in pytest_runtest_call
+    |     yield from thread_exception_runtest_hook()
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\threadexception.py", line 63, in thread_exception_runtest_hook
+    |     yield
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\unraisableexception.py", line 90, in pytest_runtest_call
+    |     yield from unraisable_exception_runtest_hook()
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\unraisableexception.py", line 65, in unraisable_exception_runtest_hook
+    |     yield
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\logging.py", line 839, in pytest_runtest_call
+    |     yield from self._runtest_for(item, "call")
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\logging.py", line 822, in _runtest_for
+    |     yield
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\capture.py", line 882, in pytest_runtest_call
+    |     return (yield)
+    |             ^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 122, in _multicall
+    |     teardown.throw(exception)  # type: ignore[union-attr]
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\skipping.py", line 256, in pytest_runtest_call
+    |     return (yield)
+    |             ^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    |     res = hook_impl.function(*args)
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    |     raise e
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\runner.py", line 170, in pytest_runtest_call
+    |     item.runtest()
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 1831, in runtest
+    |     self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_hooks.py", line 513, in __call__
+    |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 182, in _multicall
+    |     return outcome.get_result()
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_result.py", line 100, in get_result
+    |     raise exc.with_traceback(exc.__traceback__)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pluggy\_callers.py", line 103, in _multicall
+    |     res = hook_impl.function(*args)
+    |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\python.py", line 194, in pytest_pyfunc_call
+    |     result = testfunction(**testargs)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\college2-main\backend\tests\test_students.py", line 18, in test_health_check
+    |     response = client.get("/health")
+    |                ^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 523, in get
+    |     return super().get(
+    |            ^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1054, in get
+    |     return self.request(
+    |            ^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 491, in request
+    |     return super().request(
+    |            ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 827, in request
+    |     return self.send(request, auth=auth, follow_redirects=follow_redirects)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 914, in send
+    |     response = self._send_handling_auth(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    |     response = self._send_handling_redirects(
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    |     response = self._send_single_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1015, in _send_single_request
+    |     response = transport.handle_request(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 372, in handle_request
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py", line 369, in handle_request
+    |     portal.call(self.app, scope, receive, send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py", line 288, in call
+    |     return cast(T_Retval, self.start_task_soon(func, *args).result())
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 456, in result
+    |     return self.__get_result()
+    |            ^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    |     raise self._exception
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py", line 217, in _call_func
+    |     retval = await retval_or_awaitable
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py", line 93, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\college2-main\backend\app\core\logging.py", line 44, in dispatch
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 155, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py", line 93, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "D:\college2-main\backend\app\core\rate_limit.py", line 21, in dispatch
+    |     client_ip = request.client.host
+    |                 ^^^^^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'host'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+tests\test_students.py:18: in test_health_check
+    response = client.get("/health")
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:523: in get
+    return super().get(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:1054: in get
+    return self.request(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:491: in request
+    return super().request(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:827: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:914: in send
+    response = self._send_handling_auth(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:942: in _send_handling_auth
+    response = self._send_handling_redirects(
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:979: in _send_handling_redirects
+    response = self._send_single_request(request)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:1015: in _send_single_request
+    response = transport.handle_request(request)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:372: in handle_request
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\testclient.py:369: in handle_request
+    portal.call(self.app, scope, receive, send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py:288: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\from_thread.py:217: in _call_func
+    retval = await retval_or_awaitable
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:1054: in __call__
+    await super().__call__(scope, receive, send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\applications.py:123: in __call__
+    await self.middleware_stack(scope, receive, send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py:186: in __call__
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py:164: in __call__
+    await self.app(scope, receive, _send)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:189: in __call__
+    with collapse_excgroups():
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py:155: in __exit__
+    self.gen.throw(typ, value, traceback)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py:93: in collapse_excgroups
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:191: in __call__
+    response = await self.dispatch_func(request, call_next)
+app\core\logging.py:44: in dispatch
+    response = await call_next(request)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:165: in call_next
+    raise app_exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:151: in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:189: in __call__
+    with collapse_excgroups():
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\contextlib.py:155: in __exit__
+    self.gen.throw(typ, value, traceback)
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\_utils.py:93: in collapse_excgroups
+    raise exc
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\base.py:191: in __call__
+    response = await self.dispatch_func(request, call_next)
+app\core\rate_limit.py:21: in dispatch
+    client_ip = request.client.host
+E   AttributeError: 'NoneType' object has no attribute 'host'
+============================== warnings summary ===============================
+app\main.py:57
+  D:\college2-main\backend\app\main.py:57: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\applications.py:4495: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)
+
+app\main.py:62
+  D:\college2-main\backend\app\main.py:62: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("shutdown")
+
+tests/test_students.py::test_get_students_unauthorized
+  C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:680: DeprecationWarning: The 'app' shortcut is now deprecated. Use the explicit style 'transport=WSGITransport(app=...)' instead.
+    warnings.warn(message, DeprecationWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_students.py::test_get_students_unauthorized - AttributeErro...
+FAILED tests/test_students.py::test_health_check - AttributeError: 'NoneType'...
+=================== 2 failed, 1 passed, 5 warnings in 0.74s ===================
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2024, in drop_database
+    with self._conn_for_writes(session, operation=_Op.DROP_DATABASE) as conn:
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1333, in _conn_for_writes
+    server = self._select_server(writable_server_selector, session, operation)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1316, in _select_server
+    server = topology.select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 369, in select_server
+    server = self._select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 347, in _select_server
+    servers = self.select_servers(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 254, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 309, in _select_servers_loop
+    _info_log(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\logger.py", line 96, in _info_log
+    logger.info(LogMessage(**fields))
+Message: <pymongo.logger.LogMessage object at 0x000001DBF0B5A200>
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 449, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 445, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'request_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 690, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 659, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 451, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'request_id'
+Call stack:
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 2024, in drop_database
+    with self._conn_for_writes(session, operation=_Op.DROP_DATABASE) as conn:
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1333, in _conn_for_writes
+    server = self._select_server(writable_server_selector, session, operation)
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1316, in _select_server
+    server = topology.select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 369, in select_server
+    server = self._select_server(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 347, in _select_server
+    servers = self.select_servers(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 254, in select_servers
+    server_descriptions = self._select_servers_loop(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 309, in _select_servers_loop
+    _info_log(
+  File "C:\Users\massm\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\logger.py", line 96, in _info_log
+    logger.info(LogMessage(**fields))
+Message: <pymongo.logger.LogMessage object at 0x000001DBF0B5A200>
+Arguments: ()
