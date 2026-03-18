@@ -21,7 +21,7 @@ python-multipart==0.0.9
 openpyxl==3.1.2
 
 # Utilities
-pillow==10.3.0
+pillow==10.2.0
 reportlab==4.4.10
 
 # Required for build stability
